@@ -34,11 +34,6 @@ mechanistic readouts.
   features such as `TUM_to_STR_NI` and `STR_to_TUM_NI` capture complementary
   views of the same tumour-stromal interface.
 
-- **Scales to multicentre WSI cohorts**  
-  The manuscript applies SpatialNI to 1,549 patients from four institutional CRC
-  cohorts and TCGA, enabling cross-cohort evaluation of spatial tissue
-  architecture, progression, prognosis and molecular microenvironmental states.
-
 - **Reveals a progression model of interface expansion**  
   SpatialNI identifies a reproducible transition from tumour self-neighbourhoods
   toward expanded tumour-stromal, tumour-muscular and adipose-associated
