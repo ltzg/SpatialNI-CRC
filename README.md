@@ -22,30 +22,45 @@ mechanistic readouts.
 
 ## Why SpatialNI-CRC?
 
-- **Pathology-readable spatial features**  
-  SpatialNI features such as `TUM_to_STR_NI`, `STR_to_TUM_NI`,
-  `TUM_to_MUS_NI` and `MUS_to_TUM_NI` directly describe tissue interfaces that
-  are recognizable in routine diagnostic pathology.
+- **Turns routine H&E architecture into quantitative spatial biomarkers**  
+  SpatialNI translates familiar pathology concepts, including tumour glands facing stroma,
+  tumour approaching smooth muscle, adipose-associated extension and
+  invasive-front organization, into reproducible patient-level neighbourhood
+  indices.
 
-- **Directional neighbourhood modelling**  
-  The same interface can be viewed from both sides. For example,
-  `TUM_to_STR_NI` measures tumour patches facing stroma, whereas
-  `STR_to_TUM_NI` measures stromal patches facing tumour.
+- **Measures directionality instead of simple tissue abundance**  
+  The framework asks not only how much tumour, stroma or muscle is present, but
+  which tissue states are locally embedded within one another. Reciprocal
+  features such as `TUM_to_STR_NI` and `STR_to_TUM_NI` capture complementary
+  views of the same tumour-stromal interface.
 
-- **WSI-scale patient-level quantification**  
-  Patch labels are aggregated into patient-level 3 x 3 neighbourhood indices,
-  enabling downstream analyses across cohorts, clinical endpoints and molecular
-  profiles.
+- **Scales to multicentre WSI cohorts**  
+  The manuscript applies SpatialNI to 1,549 patients from four institutional CRC
+  cohorts and TCGA, enabling cross-cohort evaluation of spatial tissue
+  architecture, progression, prognosis and molecular microenvironmental states.
 
-- **Interface-aware composite indices**  
-  The code derives pathology-informed composite scores summarizing
-  tumour-stromal coupling, tumour-muscular interface burden, transmuscular
-  extension and invasive-front remodelling.
+- **Reveals a progression model of interface expansion**  
+  SpatialNI identifies a reproducible transition from tumour self-neighbourhoods
+  toward expanded tumour-stromal, tumour-muscular and adipose-associated
+  interfaces, providing a spatial readout of invasive-front remodelling.
 
-- **Clinical and biological integration**  
-  SpatialNI links H&E-visible tissue architecture to stage progression,
-  survival, transcriptomic programmes, immune-contexture estimates, spatial
-  transcriptomics and ligand-receptor activity.
+- **Summarizes invasive architecture with pathology-informed composite indices**  
+  Composite scores capture mesenchymal interface burden, tumour-stromal
+  coupling, tumour-muscular interfaces, transmuscular extension and
+  invasive-front remodelling in compact, interpretable patient-level metrics.
+
+- **Connects morphology to clinical and molecular phenotypes**  
+  SpatialNI features track T, N, M and TNM progression, stratify overall
+  survival, support hypothesis-generating treatment-associated subgroup
+  analyses, and link high interface-burden states to stromal activation,
+  immune-contexture remodelling and spatial transcriptomic programmes at
+  tumour-stromal interfaces.
+
+- **Provides a reusable digital atlas**  
+  The SpatialNI-CRC Atlas exposes index definitions, distributions, clinical
+  associations, survival analyses, molecular correlations and representative
+  cases through a browser-based interface for transparent exploration and
+  external validation.
 
 ## SpatialNI-CRC Atlas
 
