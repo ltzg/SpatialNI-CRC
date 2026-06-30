@@ -1,0 +1,33 @@
+name: spatialni-crc
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - numpy=1.26.4
+  - pandas=2.2.3
+  - scipy=1.14.1
+  - scikit-image=0.24.0
+  - scikit-learn=1.5.2
+  - matplotlib=3.9.3
+  - pillow=11.0.0
+  - openslide-python=1.4.1
+  - zarr=3.2.1
+  - pytorch=2.7.1
+  - torchvision=0.22.1
+  - pytorch-cuda=12.6
+  - r-base=4.3
+  - r-data.table
+  - r-dplyr
+  - r-readr
+  - pip:
+      - tiatoolbox==1.6.0
+      - opencv-python==4.9.0.80
+
+# R transcriptomic scripts additionally use IOBR.
+# Install inside R after environment creation if needed:
+#   install.packages("remotes")
+#   remotes::install_github("IOBR/IOBR")
